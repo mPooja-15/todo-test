@@ -11,17 +11,22 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
   const [errorMsg, setErrorMsg] = useState("");
   const [iscomplate, setIsComplate] = useState("incomplete");
   const { todoData } = useSelector((data) => data.todoDataReducer?.todoData);
-  console.log(todoData?.data.message);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createTodoApi(task_name, iscomplate));
+    if(type=="update"){
+      dispatch(createTodoApi(task_name, iscomplate,));
+    }else{
+      dispatch(createTodoApi(task_name, iscomplate));
+    }
+  
   };
+
   useEffect(() => {
     if (todoData?.MSG == "User is not Created") {
       setErrorMsg(todoData?.data?.errors?.task_name?.message);
     }
-  }, [todoData?.data.message]);
-  console.log(errorMsg,"errorMsgerrorMsg")
+  }, [todoData?.data?.message]);
   return (
     <>
       {modalOpen && (
