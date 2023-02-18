@@ -1,0 +1,67 @@
+
+
+.btn-cg {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  &.white {
+    &:hover {
+    }
+  }
+
+  &.round {
+    border-radius: 50px;
+  }
+}
+.select-btn {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.header-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  button {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+.modal-content {
+  padding: 2rem;
+  border-radius: 8px;
+}
+form {
+  width: 100%;
+  margin-top: 18px;
+  .form-class {
+    display: grid;
+  }
+  .title {
+    font-size: 1.6rem;
+    .select-btn {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}
+.close-btn {
+  position: absolute;
+  top: 39px;
+  right: 25px;
+  transform: translateY(-100%);
+  font-size: 1.5rem;
+  display: flex;
+}
+.btn-svg{
+  font-size: 24px;
+}

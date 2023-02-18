@@ -1,0 +1,23 @@
+.todo-item-main{
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: rgb(219, 241, 231);
+    margin-top: 33px;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    .todo-item-sub{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+}
+.btn-position{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
